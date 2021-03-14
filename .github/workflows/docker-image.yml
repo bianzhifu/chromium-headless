@@ -1,0 +1,20 @@
+sname: build&push chromium-headless
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@master 
+    - name: Customizable Docker Buildx
+      uses: ilteoood/docker_buildx@master
+      with:
+        tag: latest,86.0.4240.111
+        imageName: bianzhifu/chromium-headless-arm64 
+        publish: true
+        dockerUser: ${{ secrets.DOCKER_USERNAME }}
+        dockerPassword: ${{ secrets.DOCKER_PASSWORD }}
