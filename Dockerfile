@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.11
 RUN set -ex \
     \
     && apk add --no-cache chromium
