@@ -10,7 +10,7 @@ jobs:
     - name: Customizable Docker Buildx
       uses: ilteoood/docker_buildx@master
       with:
-        tag: latest,86.0.4240.111
+        tag: latest,81.0.4044.113
         imageName: bianzhifu/chromium-headless
         platform: linux/amd64,linux/arm64
         publish: true
