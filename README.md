@@ -1,7 +1,9 @@
 # chromium-headless 
 http://dl-cdn.alpinelinux.org/alpine/latest-stable/community/aarch64/   
 http://dl-cdn.alpinelinux.org/alpine/latest-stable/community/x86_64/   
-查找chromium版本号 例如86.0.4240.111 
+查找chromium版本号 
+
+当前 稳定版本81.0.4044.113 by alpine:3.11
 
 docker-compose
 ```version: "3"
