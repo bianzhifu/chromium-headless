@@ -1,4 +1,4 @@
-sname: build&push chromium-headless
+name: build&push chromium-headless
 on:
   push:
     branches: [ master ]
